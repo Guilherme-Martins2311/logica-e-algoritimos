@@ -16,5 +16,8 @@ int main(int argc, char* argv[]){
     printf("A idade eh: %d\n", idade);
     printf("A altura eh: %.2f\n", altura);
     printf("O peso eh: %2.f\n", peso);
+    
+    double dobro_peso = peso * 2.0;
+    printf("O dobro do peso eh: %.2f", dobro_peso);
     return 0;
 }
