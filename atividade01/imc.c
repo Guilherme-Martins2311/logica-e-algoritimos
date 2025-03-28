@@ -12,6 +12,7 @@ int main(int argc, char* argv[]){
     scanf("%f", &peso);
 
     imc = peso / (altura * altura);
+    
     printf("Seu imc eh: %.2f", imc);
 
     return 0;
