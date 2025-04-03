@@ -6,7 +6,6 @@ int main(int argc, char* argv[]){
 
     printf("Digite o valor do raio do circulo: ");
     scanf("%f", &raio);
-    
 
     area = (powf(raio, 2)) * M_PI;
     //pode ser também: area = (raio * raio) * pi
