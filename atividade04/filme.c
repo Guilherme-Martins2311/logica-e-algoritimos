@@ -3,10 +3,12 @@
 int main(int argc, char* argv[]){
     int opcao, leve, intenso, terror, acao;
 
+do{
     printf("Escolha um tipo de filme: \n");
     printf("1 - Leve \n");
     printf("2 - intenso \n");
     scanf("%u", &opcao);
+
 
     if(opcao == 1){
         printf("Escolha um genero de filme leve:\n");
@@ -23,6 +25,7 @@ int main(int argc, char* argv[]){
     }
 
     if(opcao == 2){
+
         printf("Escolha um genero de filme intenso:\n");
         printf("1 - terror\n");
         printf("2 - acao\n");
@@ -55,5 +58,13 @@ int main(int argc, char* argv[]){
 
         }
     }
+
+printf("\nDeseja escolher um novo filme?\n");
+printf("0 - Sim\n");
+printf("1 - Nao\n");
+scanf("%d", &opcao);
+
+} while (opcao == 0);
+
   return 0;
 }
