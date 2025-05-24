@@ -14,13 +14,13 @@ int main(int argc, char* argv[]){
     if(argc == 3){
         x = atoi(argv[1]);
         y = atoi(argv[2]);
-        printf("%d\n", maior_2n(x, y));
+        printf("%d\n", menor_2n(x, y));
     }
     else {
         x = atoi(argv[1]);
         y = atoi(argv[2]);
         z = atoi(argv[3]);
-        printf("%d", maior_3n(x, y, z));
+        printf("%d", menor_3n(x, y, z));
     }
     return 0;
 }

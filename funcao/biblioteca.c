@@ -8,7 +8,7 @@ int maior_2n(int a, int b){
     }
     return maior;
 }
-// retorna o menor entre 2 numeros inteiros
+// retorna o maior entre 3 numeros inteiros
 int maior_3n(int a, int b, int c){
     return maior_3n(maior_2n(a, b), c);
 
