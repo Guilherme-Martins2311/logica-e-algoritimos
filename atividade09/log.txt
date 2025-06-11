@@ -1,0 +1,42 @@
+
+Numero minimo: 10
+Numero maximo: 20
+Numero esperado: 15
+Numero sorteado: 14
+Resultado: Nao foi sorteado
+
+Numero minimo: 10
+Numero maximo: 20
+Numero esperado: 15
+Numero sorteado: 16
+Resultado: Nao foi sorteado
+
+Numero minimo: 10
+Numero maximo: 20
+Numero esperado: 15
+Numero sorteado: 19
+Resultado: Nao foi sorteado
+
+Numero minimo: 10
+Numero maximo: 20
+Numero esperado: 15
+Numero sorteado: 12
+Resultado: Nao foi sorteado
+
+Numero minimo: 10
+Numero maximo: 20
+Numero esperado: 15
+Numero sorteado: 15
+Resultado: Foi sorteado
+
+Numero minimo: 10
+Numero maximo: 20
+Numero esperado: 15
+Numero sorteado: 17
+Resultado: Nao foi sorteado
+
+Numero minimo: 10
+Numero maximo: 20
+Numero esperado: 15
+Numero sorteado: 18
+Resultado: Nao foi sorteado

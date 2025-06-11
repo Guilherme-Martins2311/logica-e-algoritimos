@@ -4,22 +4,34 @@
 
 int main(int argc, char* argv[]){
 
-    int n_min, n_max, n_escolhido, n_sorteado = 1;
+    FILE *log = fopen("log.txt", "a");
 
-    n_min = atof(argv[1]);
-    n_max = atof(argv[2]);
-    n_escolhido = atof(argv[3]);
+    if(log == NULL){
+        printf("erro ao abrir o arquivo");
+        return 1;
+    }
+
+    int n_min = atof(argv[1]);
+    int n_max = atof(argv[2]);
+    int n_escolhido = atof(argv[3]);
 
     srand(time(NULL));
 
-    n_sorteado = rand() % (n_max++);
+    int n_sorteado = n_min + rand() % (n_max - n_min + 1);
 
-    printf("O numero sorteado eh: %d\n", n_sorteado);
+    printf("Numero sorteado: %d\n", n_sorteado);
+
+    fprintf(log, "\nNumero minimo: %d\n", n_min);
+    fprintf(log, "Numero maximo: %d\n", n_max);
+    fprintf(log, "Numero esperado: %d\n", n_escolhido);
+    fprintf(log, "Numero sorteado: %d\n", n_sorteado);
 
     if(n_sorteado == n_escolhido){
         printf("Voce foi sorteado!\n");
+        fprintf(log, "Resultado: Foi sorteado\n");
     }else{
         printf("Voce nao foi sorteado!\n");
+        fprintf(log, "Resultado: Nao foi sorteado\n");
     }
 
     return 0;
