@@ -15,6 +15,14 @@ int main(int argc, char* argv[]){
     int n_max = atof(argv[2]);
     int n_escolhido = atof(argv[3]);
 
+    if(n_min >= n_max){
+        printf("Numero Invalido.\n");
+        return 1;
+    } else if(n_escolhido < n_min || n_escolhido > n_max){
+        printf("Numero Invalido.\n");
+        return 1;
+    }
+
     srand(time(NULL));
 
     int n_sorteado = n_min + rand() % (n_max - n_min + 1);
